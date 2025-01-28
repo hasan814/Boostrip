@@ -2,7 +2,7 @@ import { TableRowProps } from "@/types";
 
 const TableRow: React.FC<TableRowProps> = ({ lead, salespeople, onAssign }) => {
   return (
-    <tr className={`${lead.id % 2 === 0 ? "bg-gray-50" : "bg-white"}`}>
+    <tr className={`${Number(lead.id) % 2 === 0 ? "bg-gray-50" : "bg-white"}`}>
       <td className="border border-gray-300 px-2 sm:px-4 py-2">{lead.name}</td>
       <td className="border border-gray-300 px-2 sm:px-4 py-2">{lead.email}</td>
       <td className="border border-gray-300 px-2 sm:px-4 py-2">
