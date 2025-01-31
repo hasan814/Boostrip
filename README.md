@@ -149,3 +149,72 @@ To deploy this application:
 5. Open a pull request.
 
 ---
+## Potential Improvements
+
+### 1. **Enhanced Form Validation**
+- **Current Issue:** The form currently lacks robust validation and error handling.
+- **Improvement:** Use a validation library to ensure input accuracy.
+- **Suggested Libraries:**  
+  - [`react-hook-form`] → Lightweight and performant form handling.  
+  - [`yup`] → Schema-based validation with extensive rule support.  
+
+---
+
+### 2. **Better Error Handling**
+- **Current Issue:** API responses are not handled efficiently, leading to unclear error messages.
+- **Improvement:** Implement global error handling with notifications.
+- **Suggested Libraries:**  
+  - [`react-toastify`] → User-friendly toast notifications for error handling.  
+  - [`sentry`] → Error tracking and logging for better debugging.  
+
+---
+
+### 3. **Salesperson Assignment Optimization**
+- **Current Issue:** Assigning salespeople is a manual selection process.
+- **Improvement:** Implement an AI-based recommendation system to assign salespeople dynamically.
+- **Suggested Libraries & Tools:**  
+  - [`tensorflow.js`] → Machine learning-based lead assignment.  
+  - [`lodash`] → Efficient data manipulation and filtering.  
+
+---
+
+### 4. **Lead Filtering and Sorting**
+- **Current Issue:** Leads are displayed in a basic table without filtering options.
+- **Improvement:** Add advanced filters for sorting and searching leads.
+- **Suggested Libraries:**  
+  - [`react-table`] → Lightweight and powerful data tables.  
+  - [`fuse.js`] → Fuzzy search for better lead filtering.  
+
+---
+
+### 5. **UI/UX Improvements**
+- **Current Issue:** Basic styling and limited interactivity.
+- **Improvement:** Use modern UI libraries for a more engaging experience.
+- **Suggested Libraries:**  
+  - [`tailwindcss`] → Utility-first CSS framework for rapid UI building.  
+  - [`framer-motion`] → Smooth animations and interactions.  
+  - [`radix-ui`] → Accessible and customizable UI components.  
+
+---
+
+### 6. **State Management for Better Performance**
+- **Current Issue:** State is managed with `useState`, which can cause performance issues in large applications.
+- **Improvement:** Implement global state management to optimize performance.
+- **Suggested Libraries:**  
+  - [`redux-toolkit`] → Efficient and scalable state management.  
+  - [`recoil`] → Simple and flexible state management for React.  
+  - [`zustand`] → Lightweight state management alternative.  
+
+---
+
+### 7. **Backend Improvements & API Enhancements**
+- **Current Issue:** API endpoints may lack optimization and error handling.
+- **Improvement:** Use better backend technologies for scalability.
+- **Suggested Technologies:**  
+  - [`Next.js API Routes`] → Efficient serverless API handling.  
+  - [`NestJS`] → Scalable and structured backend framework for enterprise applications.  
+  - [`Prisma`] → ORM for database interactions with TypeScript support.  
+
+---
+
+By implementing these improvements, the lead management system can be optimized for better performance, user experience, and scalability.
