@@ -8,16 +8,16 @@ import StepTwo from "../elements/StepTwo";
 import toast from "react-hot-toast";
 
 const LeadForm: React.FC = () => {
-  // ============= State ===========
-  const [step, setStep] = useState(1);
+  // =============== State ==============
   const [formData, setFormData] = useState({ name: "", email: "", source: "" });
+  const [step, setStep] = useState(1);
 
-  // ============= Input Function ===========
+  // =============== Handle Function ==============
   const handleInputChange = (field: string, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
-  // ============= Submit Function ===========
+  // =============== Submit Function ==============
   const submitHandler = async () => {
     try {
       const response = await fetch("/api/leads", {
@@ -39,7 +39,7 @@ const LeadForm: React.FC = () => {
     }
   };
 
-  // ============= Rendering ===========
+  // =============== Rendering ============
   return (
     <FormContainer>
       <h1 className="text-xl sm:text-2xl font-semibold text-gray-700 mb-6 text-center">

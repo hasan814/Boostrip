@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 
+import ToasterProvider from "@/providers/ToasterProvider";
 import Header from "@/components/layouts/Header";
 import Footer from "@/components/layouts/Footer";
 
 import "./globals.css";
-import ToasterProvider from "@/providers/ToasterProvider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,9 +21,7 @@ export default function RootLayout({
       <body className="flex min-h-screen flex-col justify-between bg-blue-200 text-gray-800 max-w-6xl mx-auto">
         <ToasterProvider />
         <Header />
-        <main className="mx-auto max-w-4xl  p-6 bg-white shadow-md rounded-lg my-60">
-          {children}
-        </main>
+        <main className="flex-grow mt-32">{children}</main>
         <Footer />
       </body>
     </html>

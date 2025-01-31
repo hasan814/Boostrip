@@ -9,7 +9,7 @@ const Header = () => {
           <ul className="flex space-x-6">
             <li>
               <Link href="/" className="hover:underline">
-                Home
+                Form
               </Link>
             </li>
             <li>

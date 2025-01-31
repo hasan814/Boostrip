@@ -1,5 +1,4 @@
 import { DataTableProps } from "@/types";
-
 import TableRow from "./TableRow";
 
 const DataTable: React.FC<DataTableProps> = ({

@@ -41,12 +41,12 @@ export interface InputFieldProps {
 export interface TableRowProps {
   lead: Lead;
   salespeople: Salesperson[];
-  onAssign: (leadId: string, salespersonId: string) => void;
+  onAssign: (leadId: string, salespersonId: string | null) => void;
 }
 
 
 export interface DataTableProps {
   leads: Lead[];
   salespeople: Salesperson[];
-  onAssign: (leadId: string, salespersonId: string) => void;
+  onAssign: (leadId: string, salespersonId: string | null) => void;
 }
